@@ -179,6 +179,10 @@ module.exports = require('./MyLib').default;
 
 이제 브라우저에서도 접근할 수 있고, 모듈로 import 해서 사용할 수 도 있다.
 
-## 4. TODO:
+## 4. 빌드 및 실행
+
+make build; npx serve .
+
+## 5. TODO:
 
 - webpack-devserver 사용해보기
