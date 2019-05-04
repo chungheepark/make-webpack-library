@@ -1,0 +1,26 @@
+{
+  "name": "webpack-test",
+  "version": "1.0.15",
+  "description": "",
+  "main": "./index.js",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.3",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-proposal-export-namespace-from": "7.0.0",
+    "@babel/preset-env": "7.1.0",
+    "babel-loader": "^8.0.5",
+    "webpack": "4.26.1",
+    "webpack-cli": "3.1.2"
+  },
+  "scripts": {
+    "build": "webpack -p"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
