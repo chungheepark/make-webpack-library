@@ -12,8 +12,3 @@
 
 - webpack 으로 빌드한다.
 - babel transpile 한다.
-
-## Not yet solved
-
-- babel로 transpile 하면 polyfill이 bundling된 script에 import 되야 한다. 라이브러리에 babel-polyfill이 사용되고, app에서도 babel-polyfill이 포함되면 중복으로 포함되는 것 아닌가?
--
