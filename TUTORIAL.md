@@ -181,7 +181,10 @@ module.exports = require('./MyLib').default;
 
 ## 4. 빌드 및 실행
 
-make build; npx serve .
+```bash
+$ make build;
+$ npx serve .
+```
 
 ## 5. TODO:
 
