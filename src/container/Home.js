@@ -1,7 +1,7 @@
 import $ from 'jQuery/dist/jquery';
 
 import { MY_ID_KEY } from '../constants';
-import { getItem } from '../storage';
+import { getItem } from '../Storage';
 
 export default class Home {
   constructor() {

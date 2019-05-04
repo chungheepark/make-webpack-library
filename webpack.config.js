@@ -43,7 +43,7 @@ module.exports = {
     // Allow the use of the real filename of the module being executed. By
     // default Webpack does not leak path-related information and provides a
     // value that is a mock (/index.js).
-    __filename: true,
+    // __filename: true,
   },
   optimization: {
     concatenateModules: minimize,
@@ -53,8 +53,8 @@ module.exports = {
     filename: `[name]${minimize ? '.min' : ''}.js`,
     library: 'MyLib',
     libraryTarget: 'umd',
+    umdNamedDefine: true,
     globalObject: 'this',
     sourceMapFilename: `[name].${minimize ? 'min' : 'js'}.map`,
-    umdNamedDefine: true,
   },
 };

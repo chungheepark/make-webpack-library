@@ -1,8 +1,8 @@
 import $ from 'jQuery/dist/jquery';
 
-import { genRandomString } from '../utils';
+import { genRandomString } from '../Utils';
 import { MY_ID_KEY } from '../constants';
-import { setItem } from '../storage';
+import { setItem } from '../Storage';
 
 export default class Signin {
   constructor() {
@@ -32,7 +32,7 @@ export default class Signin {
       const pass = $('#input-signin-pass').val();
 
       if (id !== pass) {
-        $('#error').text('헤이, 로그인 실패야. 돌아가.');
+        $('#error').text('로그인 실패야. 돌아가.');
         return;
       }
 

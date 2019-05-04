@@ -18,7 +18,6 @@ class AppController {
   }
 
   async executeRouter(path) {
-    console.log(this.TAG, 'executeRouter');
     if (this.beforeHandler !== null) await this.beforeHandler.revoke();
 
     const handler = this.routerMap[path] || this.routerMap['#home'];
@@ -28,7 +27,6 @@ class AppController {
   }
 
   run() {
-    console.log(this.TAG, 'run');
     this.executeRouter(window.location.hash);
   }
 }

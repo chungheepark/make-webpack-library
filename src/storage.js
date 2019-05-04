@@ -6,7 +6,6 @@ export const setItem = (key, item) => {
 
 export const getItem = key => {
   const item = sessionStorage.getItem(`${storageKey}.${key}`);
-  console.log(item);
   if (item === null) {
     return null;
   }

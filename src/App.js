@@ -8,8 +8,6 @@ export default class App {
   }
 
   start() {
-    console.log(this.TAG, 'start');
-
     this.controller.prepareRouter();
     this.controller.run();
 

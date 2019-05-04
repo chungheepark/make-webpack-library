@@ -3,7 +3,11 @@
   <head>
     <script src="lib.min.js"></script>
     <script>
-      console.log(MyLib);
+      console.log(MyLib.Utils.genRandomString(15));
+      $(() => {
+        const app = new MyLib.App();
+        app.start();
+      });
     </script>
   </head>
   <body>
