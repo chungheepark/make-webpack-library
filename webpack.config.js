@@ -10,8 +10,7 @@ module.exports = {
   module: {
     rules: [
       {
-        // Transpile ES2015 (aka ES6) to ES5.
-        exclude: [new RegExp(`${__dirname}/node_modules/(?!js-utils)`)],
+        exclude: [new RegExp(`${__dirname}/node_modules`)],
         loader: 'babel-loader',
         test: /\.js$/,
         options: {
