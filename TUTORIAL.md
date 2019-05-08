@@ -124,15 +124,11 @@ class Bork {
     return Bork.staticProperty;
   };
 }
-```
 
-```js
 // @babel/plugin-proposal-export-default-from
 // https://babeljs.io/docs/en/babel-plugin-proposal-export-default-from
 export v from 'mod';
-```
 
-```js
 // @babel/plugin-proposal-export-namespace-from
 // https://babeljs.io/docs/en/next/babel-plugin-proposal-export-namespace-from.html
 export * as ns from 'mod';
@@ -144,7 +140,7 @@ export * as ns from 'mod';
 
 lib-jitsi-meet이라는 라이브러리는 window.JitsiMeetJS 라는 객체에다가 할당해서 window에서 사용할 수 있도록 한다.
 
-우리도 MyLib.js라는 녀석을 추가해서 한번 해결해 보자.
+MyLib.js라는 녀석을 추가해서 한번 해결해 보도록 한다.
 
 ```js
 // MyLib.js
@@ -177,7 +173,7 @@ export default _mergeNamespaceAndModule({
 module.exports = require('./MyLib').default;
 ```
 
-이제 브라우저에서도 접근할 수 있고, 모듈로 import 해서 사용할 수 도 있다.
+이제 브라우저에서도, 모듈로 import 해서 사용할 때됴 MyLib.App, MyLib.Utils로 접근할 수 있다.
 
 ## 4. 빌드 및 실행
 
