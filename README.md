@@ -12,5 +12,4 @@
 
 - webpack 으로 빌드한다.
 - babel transpile 한다.
-
-https://github.com/chungheepark/make-webpack-library/tree/master/TUTORIAL.md
+- [tutorial](https://github.com/chungheepark/webpack-build-lib/blob/master/TUTORIAL.md)
